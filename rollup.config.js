@@ -9,12 +9,12 @@ export default [
     output: {
       name: "rollUpTest",
       file: packageJSON.main,
-      format: "iife",
+      format: "umd",
       globals: {
         react: "React"
       }
     },
-    external: ["react"],
+    external: ["react", "react-dom"],
     plugins: [
       babel({
         exclude: "node_modules/**"

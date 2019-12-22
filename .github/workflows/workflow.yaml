@@ -13,4 +13,4 @@ jobs:
         with:
           entrypoint: "/bin/sh"
           args: |
-            "apk add curl wget && ls"'
+            "apk add curl wget && ls"

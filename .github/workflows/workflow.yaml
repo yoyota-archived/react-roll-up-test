@@ -11,6 +11,7 @@ jobs:
       - name: test
         uses: docker://alpine
         with:
-          entrypoint: "/bin/sh -c"
+          entrypoint: |
+            "/bin/sh -c"
           args: |
             "apk add curl wget && ls"

@@ -1,7 +1,7 @@
 {
-  "name": "yoyota-react-roll-up-test",
+  "name": "yoyota-npm-test",
   "version": "0.0.1",
-  "description": "test project",
+  "description": "npm test project",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -29,7 +29,6 @@
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.5",
     "@babel/preset-react": "^7.7.4",
-    "babel-loader": "^8.0.6",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.7.0",
@@ -43,6 +42,10 @@
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "rollup": "^1.27.8",
-    "rollup-plugin-babel": "^4.3.3"
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.1.2"
+  },
+  "dependencies": {
+    "posenet-react": "file:../posenet-react"
   }
 }

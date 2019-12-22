@@ -12,5 +12,5 @@ jobs:
         uses: docker://alpine
         with:
           args: |
-            apk add curl wget
+            apk add curl wget &&
             ls

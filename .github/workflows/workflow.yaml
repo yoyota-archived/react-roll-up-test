@@ -11,5 +11,6 @@ jobs:
       - name: test
         uses: docker://alpine
         with:
-          entrypoint: ""
-          args: apk add curl wget
+          args: |
+            apk add curl wget
+            apk add git

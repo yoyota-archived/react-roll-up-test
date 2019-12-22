@@ -13,3 +13,5 @@ jobs:
         uses: actions/checkout@v1
       - name: test
         uses: docker://alpine
+      - name: ls
+        run: ls

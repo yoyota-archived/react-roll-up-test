@@ -1,4 +1,4 @@
-name: Greet Everyone
+name: Test
 on: [push]
 
 jobs:

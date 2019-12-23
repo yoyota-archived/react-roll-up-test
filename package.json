@@ -44,8 +44,5 @@
     "rollup": "^1.27.8",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-terser": "^5.1.2"
-  },
-  "dependencies": {
-    "posenet-react": "file:../posenet-react"
   }
 }

@@ -6,6 +6,7 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
+      - run: echo $TEST
       - name: Checkout
         uses: actions/checkout@v1
       - name: test
@@ -15,5 +16,6 @@ jobs:
             "
             apk add curl wget &&
             ls &&
-            pwd
+            pwd &&
+            echo $TEST
             "

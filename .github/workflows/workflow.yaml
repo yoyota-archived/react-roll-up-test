@@ -17,6 +17,9 @@ jobs:
       - run: echo $NODE_AUTH_TOKEN
         env:
           NODE_AUTH_TOKEN: ${{secrets.TEST}}
+      - run: echo $NODE_AUTH_TOKEN
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

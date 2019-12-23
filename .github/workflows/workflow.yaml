@@ -6,7 +6,7 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-      - run: env
+      - run: echo $GITHUB_SHA
       # - uses: actions/checkout@v1
       # - uses: actions/setup-node@v1
       #   with:

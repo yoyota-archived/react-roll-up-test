@@ -2,8 +2,7 @@ name: Greet Everyone
 on: [push]
 
 jobs:
-  build:
-    name: Greeting
+  publish-npm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1

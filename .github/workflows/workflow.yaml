@@ -11,5 +11,5 @@ jobs:
       - name: test
         uses: docker://alpine
         with:
-          args: /bin/sh -c \
+          args: /bin/sh -c
             "apk add curl wget && ls"

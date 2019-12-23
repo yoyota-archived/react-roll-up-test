@@ -12,4 +12,4 @@ jobs:
         uses: docker://alpine
         with:
           args: |
-            '/bin/bash -c "apk add curl wget && ls"'
+            '/bin/sh -c "apk add curl wget && ls"'

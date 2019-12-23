@@ -6,16 +6,9 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-      - run: echo $TEST
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: test
-        uses: docker://alpine
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
-          args: /bin/sh -c
-            "
-            apk add curl wget &&
-            ls &&
-            pwd &&
-            echo $TEST
-            "
+          node-version: lts-latest
+      - run: npm ci
+      - run: npm test

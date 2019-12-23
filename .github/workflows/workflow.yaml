@@ -11,6 +11,12 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm run build
+      - run: echo $NODE_AUTH_TOKEN
+        env:
+          NODE_AUTH_TOKEN: test
+      - run: echo $NODE_AUTH_TOKEN
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.TEST}}
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

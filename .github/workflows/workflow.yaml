@@ -6,8 +6,7 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-      - run: printenv
-      - run: echo $GITHUB_SHA
+      - run: echo ${GITHUB_SHA:5}
       # - uses: actions/checkout@v1
       # - uses: actions/setup-node@v1
       #   with:

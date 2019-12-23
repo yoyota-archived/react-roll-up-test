@@ -5,12 +5,15 @@ jobs:
   publish-npm:
     runs-on: ubuntu-latest
     steps:
+      - run: echo $NPM_TOKEN
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
           node-version: 12
       - run: npm ci
       - run: npm run build
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm publish
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
